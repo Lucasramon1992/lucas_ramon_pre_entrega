@@ -1,1 +1,3 @@
-# lucas_ramon_pre_entrega
+Lucas_Ramon_pre_entrega
+ Es una pagina en la que vamos a poder crear, leer, borrar y editar cursos, estudiantes y profesores.Las clases que utilice en este caso son estudiantes, profesores, cursos que se encuentran en la carpeta app1 con el nombre de archivo models.py, las mismas son asociadas con el archivo views.py que se encuentra en la carpeta app1 en el se define todo el funcionamiento del programa. Luego el archivo views.py se relaciona con el archivo url.py de la carpeta app1, en el cual encontraremos todas las urls necesarias para utilizar en nuestra pagina, estas urls entan asociadas a los archivos .html que estan ubicados en app1\templates\app1.
+No olviden que para comenzar a utilizar este programa hay que colocar en el terminal "manage.py makemigrations" luego "manage.py migrate" y por ultimo "manage.py runserver"  Gracias
