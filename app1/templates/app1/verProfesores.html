@@ -1,0 +1,19 @@
+{% extends "app1/padre.html"%}
+
+{% block titulo %}
+Profesores
+{% endblock %}
+{% block formulario %}
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="btn btn-primary" href="{% url 'profescrear' %}">Nuevo profesor</a>
+    </div>
+</nav>
+{% endblock %}
+{% block ver %}
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="btn btn-primary" href="{% url 'profesleer' %}">Base de datos</a>
+    </div>
+</nav
+{% endblock %}

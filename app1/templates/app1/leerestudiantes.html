@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    {% for estudiantes in students %}
+    
+    <p>Nombre: {{estudiantes.nombre}}</p>
+    <p>apellido: {{estudiantes.apellido}}</p>
+    <p>camada: {{estudiantes.camada}}</p>
+
+    <button>
+        <a href="{% url 'estudianteEliminar' estudiantes.nombre %}">Eiminar</a>
+    </button>
+    <button>   
+        <a href="{% url 'estudianteEditar' estudiantes.nombre %}">Editar</a>
+    </button>
+
+    **********************************************
+    {% endfor %}
+</body>
+</html>

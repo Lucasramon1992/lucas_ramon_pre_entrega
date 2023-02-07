@@ -1,0 +1,19 @@
+{% extends "app1/padre.html"%}
+
+{% block titulo %}
+¡Bienvenidos!
+{% endblock %}
+
+{% block descripcion %}
+<p>buscar alumnos por numero de camada:</p>
+<form action="/app1/resultados_Busqueda/" method="GET">
+    <input type="number" name="camada" id="camada">
+    <input type="submit" value="Buscar">
+</form>
+
+
+{% for estudiantes in apellido %}
+    <p>Apellido del alumno: {{estudiantes.apellido}} /// Numero de camda: {{estudiantes.camada}}</p>
+{% endfor %}
+
+{% endblock %}
